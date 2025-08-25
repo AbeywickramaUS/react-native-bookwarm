@@ -3,7 +3,7 @@
 import express from 'express';
 import cors from 'cors';
 import "dotenv/config";
-import Job from './lib/cron.js';
+// import Job from './lib/cron.js';
 
 import authrouter from "./Routes/authRoutes.js";
 import bookrouter from "./Routes/bookRoutes.js";
@@ -12,7 +12,7 @@ import { connectDB } from './lib/db.js';
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-Job.start();
+//Job.start();
 app.use(express.json());
 app.use(cors());
 
